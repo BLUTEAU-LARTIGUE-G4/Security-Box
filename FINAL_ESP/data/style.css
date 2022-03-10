@@ -1,0 +1,70 @@
+html {
+  font-family: Helvetica;
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+}
+
+h1{
+  font-size: 1.8rem;
+  color: white;
+  padding: 2vh;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #212A07;
+}
+
+p{
+  font-size: 1.2rem;
+  padding-top: 4px;
+}
+
+body {
+  margin: 0;
+}
+
+label {
+  font-size: 1.2rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+
+.content {
+  padding: 10px 30px 10px 30px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #212A07;
+}
+
+.card {
+  display:  block;
+  background-color: #BAC2AD;
+  box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+  padding-bottom: 20px;
+}
+
+.button {
+  display: block;
+  background-color: #212A07;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+  margin: auto;
+  cursor: pointer;
+  width: 10%;
+}
+
+
+
+

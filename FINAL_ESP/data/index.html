@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>LOZA BOX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+      <h1>LOZA BOX</h1>
+    </div>
+    <div class="content">
+        <div class="card">
+          <p class="card-title">Voulez-vous autoriser l'ouverture de la boite ?</p>
+          <p>État de la boite : <strong> %STATE%</strong></p>
+              <p><a href="/oui"><button class="button">Oui</button></a></p>
+              <p><a href="/non"><button class="button">Non</button></a></p>
+        </div>
+        <div class="card">
+          <p class="card-title">Voulez-vous réinitialiser le code ?</p>
+                <div class="zone">
+                  <p>Code actuel : <strong> %CODE%</strong></p>
+                  
+                    <form method="GET" action="/code">
+                    <label for="code">Nouveau code :</label>
+                    <input type="text" name="password" id="code" placeholder="Ex: 1234" maxlength="4"/>
+                    <input type="submit" value="Envoyer" onclick="submitMessage()"/> <br><br>
+                  
+                  <p1>Merci de saisir un code différent de :</p1>
+                  <p1>"0000" ou "ABCD"</p1>
+                  </form>
+                  <script type="text/javascript">
+                  function submitMessage() {
+                    alert("Code sauvegardé");
+                    setTimeout(function(){ document.location.reload(false); }, 500);}
+                  </script>
+              </div>
+        </div>
+      </div>
+</body>
+</html>
